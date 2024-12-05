@@ -19,7 +19,7 @@ public class AccountReader {
         System.out.println("IBAN:");
         String iban = scanner.nextLine();
 
-        System.out.println("Nombre:");
+        System.out.println("Saldo:");
         double balance = scanner.nextDouble();
         scanner.nextLine();
 

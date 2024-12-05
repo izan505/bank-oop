@@ -30,6 +30,29 @@ public class BankApp {
                 System.out.println("Introduce el IBAN:");
                 String iban = scanner.nextLine();
                 bank.showAccount(iban);
+            } else if (option == 3) {
+                System.out.println("Introduce el NIF del cliente:");
+                String nif = scanner.nextLine();
+
+                bank.showCustomerAccounts(nif);
+            } else if (option == 4) {
+                System.out.println("Introduce el IBAN:");
+                String iban = scanner.nextLine();
+
+                System.out.println("Cantidad vas a ingresar:");
+                double amount = scanner.nextDouble();
+                scanner.nextLine();
+
+                bank.deposit(iban, amount);
+            } else if (option == 5) {
+                System.out.println("Introduce el IBAN:");
+                String iban = scanner.nextLine();
+
+                System.out.println("Cantidad vas a sacar:");
+                double amount = scanner.nextDouble();
+                scanner.nextLine();
+
+                bank.withdraw(iban, amount);
             }
         } while (option != 6);
     }

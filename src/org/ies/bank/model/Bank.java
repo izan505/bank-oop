@@ -12,6 +12,26 @@ public class Bank {
         this.accounts = accounts;
     }
 
+    public void showAccountCustomer(String iban) {
+        var account = findAccount(iban);
+        if (account == null) {
+            System.out.println("La cuenta no existe");
+        } else {
+            account.getCustomer().showInfo();
+        }
+    }
+
+    public int countCustomerAccounts(String nif) {
+        int count = 0;
+        for (var account : accounts) {
+            if (account.getCustomer().getNif().equals(nif)) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+
     public void showAccounts() {
         for (var account : accounts) {
             account.showInfo();

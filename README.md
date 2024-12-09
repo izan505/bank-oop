@@ -83,3 +83,13 @@ Tendrá un método run() que realice lo siguiente:
 - Muestra en pantalla la información de la cuenta "ES0001"
 - Muestra en pantalla la información de la cuenta "ES0002"
 - Haz una trasnferencia de 500 euros desde "ES0001" a "ES0002"
+
+### BankApp3
+
+Tendrá un método run() que realice lo siguiente:
+- Pide un banco usando BankReader
+- Muestra todas las cuentas del banco
+- Saca 50 de la cuenta ES0003
+- Muestra las cuentas del cliente con NIF 000X
+- Mete 300 en la cuenta ES004
+- Muestra los datos del titular de la cuenta ES0001

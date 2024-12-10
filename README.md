@@ -70,3 +70,26 @@ Tendrá un método run() que realice los siguiente:
   7. Mostrar cliente de cuenta
   8. Realizar transferencia
 
+### BankApp2
+
+Tendrá un método run() que realice lo siguiente:
+- Pide un banco usando BankReader
+- Busca la cuenta con IBAN "ES0001".
+  - Si no existe muestra "La cuenta no existe"
+  - Si existe, hace un deposito en la misma de 500
+- Busca otra cuenta con IBAN "ES0002"
+  - Si no existe muestra "La cuenta no existe"
+  - Si existe, saca 30 euros 
+- Muestra en pantalla la información de la cuenta "ES0001"
+- Muestra en pantalla la información de la cuenta "ES0002"
+- Haz una trasnferencia de 500 euros desde "ES0001" a "ES0002"
+
+### BankApp3
+
+Tendrá un método run() que realice lo siguiente:
+- Pide un banco usando BankReader
+- Muestra todas las cuentas del banco
+- Saca 50 de la cuenta ES0003
+- Muestra las cuentas del cliente con NIF 000X
+- Mete 300 en la cuenta ES004
+- Muestra los datos del titular de la cuenta ES0001

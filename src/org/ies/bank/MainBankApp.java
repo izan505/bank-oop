@@ -7,7 +7,7 @@ import org.ies.bank.components.CustomerReader;
 
 import java.util.Scanner;
 
-public class Main {
+public class MainBankApp {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         CustomerReader customerReader = new CustomerReader(scanner);
